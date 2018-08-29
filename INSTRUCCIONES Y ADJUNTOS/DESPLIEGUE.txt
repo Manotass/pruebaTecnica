@@ -1,16 +1,12 @@
 Para el despliegue el computador debe contar con el JDK v1.8, nodeJS v8.11.4 y NPM v5.6.0
 
-- En la Ruta ".\Pruebacombinado\build\libs" se encuentra el ejecutable .jar llamado "gs-rest-service-0.1.0.jar"
-Este jar contiene el backEnd del proyecto para correrlo se debe debe abrir una consola en la ubicacion del archivo y ejecutar el comando:"java -jar gs-rest-service-0.1.0.jar"
-En la consola podremos observar el despliegue de los mudulos, plugins y dependencias del proyecto y su estado de ejecucion.
+Nos situamos en la raiz del proyecto y ejecutamos los siguiente comandos en orden
 
-- Si queremos, podemos ubicarnos el la ruta raiz del proyecto y ejecutar el comando "gradle run" que tambien hara correr el backEnd.
+-Primer ejecutamos los comandos "npm install react-scripts -g", "npm install --save react react-dom" y "npm install --save react-bootstrap" Para garantizar que las dependencias del frontEnd esten al dia
 
-- De igual forma, si se desea, se puede abrir el proyecto en un IDE de preferencia y se corre la clase : "aplicacion.java" y el proyecto se deplegara mediante la consola interna
-del editor.
+-Seguido a esto ejecutamos los comando "gradle clean", "gradle build" y "gradle run" para compilar y ejecutar el backEnd
 
-
--Posteriormente a alguno de estos  procesos, nos situamos en la carpeta raiz del proyecto y ejecutamos el comando "npm start" para ejecutar el frontEnd del proyecto
+-Posteriormente  ejecutamos el comando "npm start" para ejecutar el frontEnd del proyecto y utilizar la aplicacion
 
 NOTAS ADICIONALES
 
