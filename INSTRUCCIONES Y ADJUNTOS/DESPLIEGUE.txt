@@ -1,0 +1,18 @@
+Para el despliegue el computador debe contar con el JDK v1.8, nodeJS v8.11.4 y NPM v5.6.0
+
+- En la Ruta ".\Pruebacombinado\build\libs" se encuentra el ejecutable .jar llamado "gs-rest-service-0.1.0.jar"
+Este jar contiene el backEnd del proyecto para correrlo se debe debe abrir una consola en la ubicacion del archivo y ejecutar el comando:"java -jar gs-rest-service-0.1.0.jar"
+En la consola podremos observar el despliegue de los mudulos, plugins y dependencias del proyecto y su estado de ejecucion.
+
+- Si queremos, podemos ubicarnos el la ruta raiz del proyecto y ejecutar el comando "gradle run" que tambien hara correr el backEnd.
+
+- De igual forma, si se desea, se puede abrir el proyecto en un IDE de preferencia y se corre la clase : "aplicacion.java" y el proyecto se deplegara mediante la consola interna
+del editor.
+
+
+-Posteriormente a alguno de estos  procesos, nos situamos en la carpeta raiz del proyecto y ejecutamos el comando "npm start" para ejecutar el frontEnd del proyecto
+
+NOTAS ADICIONALES
+
+Debido a que la base de datos que el proyecto usa es local y se encuentra ubicada en la raiz del mismo con el nombre: "administradorBienes.db" No se puede mover el
+.jar ejecutable del proyecto o no la encontrara.

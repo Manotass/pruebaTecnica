@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "d6f0af68-4a6b-4ee0-8ad6-60ee1b148064",
+		"name": "Prueba Tecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8090/responsablesTotales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/tiposResponsableTotales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"tiposResponsableTotales"
+					]
+				},
+				"description": "Fetch que trae todos los responsables en la base de datos"
+			},
+			"response": [
+				{
+					"name": "http://localhost:8090/responsablesTotales",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8090/tiposResponsableTotales",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"tiposResponsableTotales"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Aug 2018 05:23:19 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"body": "[{\"id\":\"0\",\"descripcion\":\"Area\"},{\"id\":\"1\",\"descripcion\":\"Persona\"}]"
+				},
+				{
+					"name": "http://localhost:8090/responsablesTotales",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8090/responsablesTotales",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"responsablesTotales"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Aug 2018 02:49:35 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"body": "[{\"id\":7,\"nombre\":\"dfgdfgdfg\",\"telefono\":\"345345345\",\"tipo\":\"Persona\"},{\"id\":8,\"nombre\":\"dfgdfgdfg\",\"telefono\":\"345345345\",\"tipo\":\"Persona\"},{\"id\":10,\"nombre\":\"dfgdfgdfg\",\"telefono\":\"345345345\",\"tipo\":\"Persona\"},{\"id\":11,\"nombre\":\"JUAN MANUEL CASTILLA VASQUEZ\",\"telefono\":\"234234234\",\"tipo\":\"Persona\"},{\"id\":12,\"nombre\":\"diego\",\"telefono\":\"4545454\",\"tipo\":\"Area\"},{\"id\":13,\"nombre\":\"crio casada\",\"telefono\":\"4234234\",\"tipo\":\"Persona\"},{\"id\":14,\"nombre\":\"dfgdfg\",\"telefono\":\"567\",\"tipo\":\"Area\"}]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8090/tiposResponsableTotales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/tiposResponsableTotales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"tiposResponsableTotales"
+					]
+				},
+				"description": "Fetch que trae todos los tipos Responsable Totales en la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/eliminarResponsable?id=7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/eliminarResponsable?id=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"eliminarResponsable"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				},
+				"description": "Fetch que trae todos losresponsables despues de haber eliminado el que se indico por parametro en la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/agregarResponsable?nombre=PRUEBA POSTMAN&telefono=1234567&tipo=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/agregarResponsable?nombre=PRUEBA POSTMAN&telefono=1234567&tipo=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"agregarResponsable"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "PRUEBA POSTMAN"
+						},
+						{
+							"key": "telefono",
+							"value": "1234567"
+						},
+						{
+							"key": "tipo",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Fetch que trae todos losresponsables despues de haber agregado el que se indico por parametro en la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/buscarResponsablePorNombre?nombre=pru",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/buscarResponsablePorNombre?nombre=pru",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"buscarResponsablePorNombre"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "pru"
+						}
+					]
+				},
+				"description": "Fetch que trae todos losresponsables que tengan nombres que coincidan los los caracteres ingresados por parametro"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/recursosTotales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/recursosTotales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"recursosTotales"
+					]
+				},
+				"description": "Fetch que trae todos los recursos en la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/eliminarRecurso?id=11",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/eliminarRecurso?id=11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"eliminarRecurso"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "11"
+						}
+					]
+				},
+				"description": "Fetch que trae los recursos restantes despues de la eliminacion del indicado por parametro"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/recursoPorSerial?serial=54",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/recursoPorSerial?serial=54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"recursoPorSerial"
+					],
+					"query": [
+						{
+							"key": "serial",
+							"value": "54"
+						}
+					]
+				},
+				"description": "Fetch que trae los recursos que tengan un serial que contenga los caracteres ingresados"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/recursoPorSerial?serial=54",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/recursosPorResponsable?id=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"recursosPorResponsable"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10"
+						}
+					]
+				},
+				"description": "Fetch que trae los recursos que el responsable indicado por parametro tenga asignados"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/eliminarRecursoResponsable?recursoId=19&responsableId=8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/eliminarRecursoResponsable?recursoId=19&responsableId=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"eliminarRecursoResponsable"
+					],
+					"query": [
+						{
+							"key": "recursoId",
+							"value": "19"
+						},
+						{
+							"key": "responsableId",
+							"value": "8"
+						}
+					]
+				},
+				"description": "Fetch que trae los recursos asignados restantes de un responsable despues de que se le desasigne un recurso indicado por parametro"
+			},
+			"response": []
+		}
+	]
+}
